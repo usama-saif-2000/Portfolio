@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.7eb21fe2.css",
+    "main.js": "/Portfolio/static/js/main.3765f467.js",
+    "static/media/page2.png": "/Portfolio/static/media/page2.5b6f71201144b521083d.png",
+    "static/media/page1.png": "/Portfolio/static/media/page1.abafcc93b15fc4ebe3cd.png",
+    "static/media/full_pr1.png": "/Portfolio/static/media/full_pr1.124c2294d614623b56f7.png",
+    "static/media/miniproj2.png": "/Portfolio/static/media/miniproj2.34e5ea873c4c16d615ee.png",
+    "static/media/miniproj4.png": "/Portfolio/static/media/miniproj4.bc45a3476c12a774542e.png",
+    "static/media/pr2_full.png": "/Portfolio/static/media/pr2_full.7298adc77d2daa99ebe8.png",
+    "static/media/usama.jpeg": "/Portfolio/static/media/usama.58cb9e9863121e0004ea.jpeg",
+    "static/media/page3.png": "/Portfolio/static/media/page3.6a4ba2fa2beba7589ba9.png",
+    "static/media/pr1.jpeg": "/Portfolio/static/media/pr1.9984d87c430296e056ad.jpeg",
+    "static/media/three.png": "/Portfolio/static/media/three.6d7ff628060d295cb9de.png",
+    "static/media/react.png": "/Portfolio/static/media/react.86c8d9eba03e29814d2a.png",
+    "static/media/mailIco.png": "/Portfolio/static/media/mailIco.a9381e5f234a56afcbb4.png",
+    "static/media/live.png": "/Portfolio/static/media/live.4dfc5c871223a955ca63.png",
+    "static/media/coding.png": "/Portfolio/static/media/coding.1c33c544721c278c5cba.png",
+    "static/media/js.png": "/Portfolio/static/media/js.075c93bea9b1ff947e08.png",
+    "static/media/node.png": "/Portfolio/static/media/node.111f27826443c0139aaf.png",
+    "static/media/css.png": "/Portfolio/static/media/css.e3ded4d0e23701f04c53.png",
+    "static/media/html.png": "/Portfolio/static/media/html.0aef53d039712284db6a.png",
+    "static/media/place.png": "/Portfolio/static/media/place.466fe6c26b3124ae97d8.png",
+    "static/media/bee.png": "/Portfolio/static/media/bee.af1e90c33e312d151502.png",
+    "static/media/githubIco.png": "/Portfolio/static/media/githubIco.8fffbb3aff2808cb0077.png",
+    "static/media/miniproj1.png": "/Portfolio/static/media/miniproj1.18ea365fa13f3de76ee5.png",
+    "static/media/call.png": "/Portfolio/static/media/call.282b01a3f5cd94d80c06.png",
+    "static/media/linkedinIco.png": "/Portfolio/static/media/linkedinIco.032cf8a63be2f0f4d425.png",
+    "static/media/miniproj3.png": "/Portfolio/static/media/miniproj3.840771a7f819e29a925e.png",
+    "static/media/bootstrap.png": "/Portfolio/static/media/bootstrap.268c4375260420e8d982.png",
+    "index.html": "/Portfolio/index.html",
+    "main.7eb21fe2.css.map": "/Portfolio/static/css/main.7eb21fe2.css.map",
+    "main.3765f467.js.map": "/Portfolio/static/js/main.3765f467.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7eb21fe2.css",
+    "static/js/main.3765f467.js"
+  ]
+}
