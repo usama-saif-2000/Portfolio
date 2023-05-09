@@ -64,7 +64,9 @@ export default function MainPage() {
           <a href="https://github.com/usama-saif-2000" target="_blank">
             <img src={gitIco} className="social-ico" alt="github icon" />
           </a>
-          <a href="https://drive.google.com/file/d/1WKD70XU7jUoA9_va7oAgdVu5U9G_8n2S/view?usp=sharing" target="_blank">
+          {/* <a href="https://drive.google.com/file/d/1WKD70XU7jUoA9_va7oAgdVu5U9G_8n2S/view?usp=sharing" target="_blank"> */}
+          
+          <a href="https://drive.google.com/file/d/1wohQ4W0CGBDKzL3GQiHIu3q9FQk-U4Qh/view?usp=sharing" target="_blank">
           <button className="button_resume">Resume</button>
           </a>
           <div className="description">Tech Stack:</div>
