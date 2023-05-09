@@ -9,24 +9,31 @@ export default function Projects() {
     <div className="section-projects" id="projects">
       <div className="projects-container">
         <div className="project-title">
-          <h2>Projects</h2>
+          <h2>Projects..!!</h2>
           <span>
-            Below you can see my projects, check out the live demos and code on
-            GitHub
+            Below you can see my projects done over the years.
           </span>
         </div>
         <Project1 />
         <Project2 />
         <Project3 />
         <div className="project-title mini">
-          <h3>Mini projects</h3>
+          <h3>Where have I studied..??</h3>
           <span>
-            This section includes projects from the beginning of my programming
-            education and technologies in which I am just beginning to learn
+            Currently, I am studying in the top university within the country,<i><span className="red"> FAST-NUCES</span></i>   ;
+            <br />            with a degree in <span className="red"><i> Computer Science</i></span>.
+            <br /> I will be graduating within a month.
           </span>
         </div>
+        <div className="project-title mini">
+          <h3>Leadership Roles..??</h3>
+          <ul>
+          <li>Event Management Co-Head <span className="red">PROCOM</span>  in 2023. </li>
+          <li>Event Management Co-Head <span className="red">devDay</span> in 2022.</li>
+          </ul>
+        </div>
 
-        <MiniProjects />
+        {/* <MiniProjects /> */}
       </div>
     </div>
   );

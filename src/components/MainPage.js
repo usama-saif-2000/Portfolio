@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
-import hiIco from "../public/img/hi.png";
-import localizationIco from "../public/img/place.png";
-import lndIco from "../public/img/linkedinIco.png";
-import gitIco from "../public/img/githubIco.png";
-import htmlIco from "../public/img/html.png";
-import cssIco from "../public/img/css.png";
-import jsIco from "../public/img/js.png";
-import bootIco from "../public/img/bootstrap.png";
-import reactIco from "../public/img/react.png";
-import threeIco from "../public/img/three.png";
-import avatar from "../public/img/avatar.png";
+import hiIco from "../ImagesAndStyles/img/hi.png";
+// import localizationIco from "../ImagesAndStyles/img/place.png";
+import lndIco from "../ImagesAndStyles/img/linkedinIco.png";
+import gitIco from "../ImagesAndStyles/img/githubIco.png";
+import htmlIco from "../ImagesAndStyles/img/html.png";
+import cssIco from "../ImagesAndStyles/img/css.png";
+import jsIco from "../ImagesAndStyles/img/js.png";
+import bootIco from "../ImagesAndStyles/img/bootstrap.png";
+import reactIco from "../ImagesAndStyles/img/react.png";
+import angularIco from "../ImagesAndStyles/img/angular.png";
+import usama from "../ImagesAndStyles/img/usama.jpeg";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
@@ -20,7 +20,7 @@ export default function MainPage() {
   const [js, setJs] = useState("");
   const [boot, setBoot] = useState("");
   const [react, setReact] = useState("");
-  const [three, setThree] = useState("");
+  const [angular, setAngular] = useState("");
 
   const handleMouseEnter = (e) => {
     if (e.target.id == "HTML") {
@@ -33,8 +33,8 @@ export default function MainPage() {
       setBoot(true);
     } else if (e.target.id == "React") {
       setReact(true);
-    } else if (e.target.id == "Three.js") {
-      setThree(true);
+    } else if (e.target.id == "Angular") {
+      setAngular(true);
     }
   };
   const handleMouseLeave = () => {
@@ -43,7 +43,7 @@ export default function MainPage() {
     setJs();
     setBoot();
     setReact();
-    setThree();
+    setAngular();
   };
   return (
     <div className="section-main" id="home">
@@ -53,27 +53,31 @@ export default function MainPage() {
           <span className="title">Front-End React Developer</span>
           <img src={hiIco} className="hello-ico" alt="hello icon" />
           <div className="description">
-            Hi, I'm Przemysław Przebięda. A passionate Front-end React Developer
-            based in Cracow, Poland.
-            <a href="#contact">
-              <img
-                src={localizationIco}
-                className="localization-ico"
-                alt="localization icon"
-              />
-            </a>
+            Hi, I'm Usama Saif. A passionate Front-end React Developer..
           </div>
           <a
-            href="https://www.linkedin.com/in/przemys%C5%82aw-przebi%C4%99da/"
+            href="https://www.linkedin.com/in/usama-saif-967842198/"
             target="_blank"
           >
             <img src={lndIco} className="social-ico" alt="linkedin icon" />
           </a>
-          <a href="https://github.com/PPrzebieda" target="_blank">
+          <a href="https://github.com/usama-saif-2000" target="_blank">
             <img src={gitIco} className="social-ico" alt="github icon" />
+          </a>
+          <a href="https://fliphtml5.com/book_edit/djbuj/thwf/?phone=true&maxwidthtosmallmode=0&maxheighttosmallmode=01683519798448#p=1" target="_blank">
+          <button className="button_resume">Resume</button>
           </a>
           <div className="description">Tech Stack:</div>
           <div className="tech-stack-box">
+            <div
+              className="tech-stack-single-box"
+              id="React"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img src={reactIco} className="tech-ico2" alt="react icon" />
+              <span>{react ? "React.js" : ""}</span>
+            </div>
             <div
               className="tech-stack-single-box"
               id="HTML"
@@ -90,7 +94,7 @@ export default function MainPage() {
               onMouseLeave={handleMouseLeave}
             >
               <img src={cssIco} className="tech-ico1" alt="css icon" />
-              <span>{css ? "CSS/SCSS" : ""}</span>
+              <span>{css ? "CSS" : ""}</span>
             </div>
             <div
               className="tech-stack-single-box"
@@ -112,22 +116,15 @@ export default function MainPage() {
             </div>
             <div
               className="tech-stack-single-box"
-              id="React"
+              id="Angular"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <img src={reactIco} className="tech-ico2" alt="react icon" />
-              <span>{react ? "React.js" : ""}</span>
+              <img src={angularIco} className="tech-ico1" alt="angular icon" />
+              <span>{angular ? "Angular" : ""}</span>
             </div>
-            <div
-              className="tech-stack-single-box"
-              id="Three.js"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img src={threeIco} className="tech-ico3" alt="three.js icon" />
-              <span>{three ? "Three.js" : ""}</span>
-            </div>
+            
+
           </div>
         </div>
         <div className="right-container">
@@ -144,7 +141,7 @@ export default function MainPage() {
               />
             </Sphere>
           </Canvas>
-          <img src={avatar} className="avatar" alt="avatar" />
+          <img src={usama} className="avatar" alt="avatar" />
         </div>
       </div>
     </div>

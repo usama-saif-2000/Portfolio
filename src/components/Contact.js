@@ -1,78 +1,48 @@
 import React, { useRef, useState } from "react";
 import Map from "./Map";
-import mailIco from "../public/img/mailIco.png";
-import emailjs from "@emailjs/browser";
+import mailIco from "../ImagesAndStyles/img/mailIco.png";
+import call from "../ImagesAndStyles/img/call.png"
+import githubIcon from "../ImagesAndStyles/img/githubIco.png"
+import linkedinIcon from "../ImagesAndStyles/img/linkedinIco.png"
 
 export default function Contact() {
   const form = useRef();
   const [sucess, setSucess] = useState(false);
   const [error, setError] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_7ltf84c",
-        "template_8bldw8f",
-        form.current,
-        "DvNi9KElrv01muMEx"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSucess(true);
-        },
-        (error) => {
-          console.log(error.text);
-          setError(true);
-        }
-      );
-  };
   return (
     <div className="section-contact" id="contact">
       <div className="contact-container">
         <div className="left-container">
-          <form onSubmit={handleSubmit} ref={form}>
-            <h1>Contact me:</h1>
-            <input type="text" placeholder="Your name" name="name" required />
-            <input
-              type="email"
-              placeholder="Your email"
-              name="email"
-              required
-            />
-            <textarea
-              placeholder="Type your message"
-              rows={10}
-              name="message"
-            />
-            <button type="submit" value="Send">
-              Send
-            </button>
-            <span>
-              {sucess
-                ? "Your message has been sent! I'll get back to you soon!"
-                : ""}{" "}
-            </span>
-            <span>{error ? "Something went wrong :(" : ""} </span>
-          </form>
+          <h1>Contact me:</h1>
+
           <div className="contact">
-            <span>
-              <img src={mailIco} /> Or text me at:
+            <span className="inline">
+              <img src={mailIco} />
+              <a
+                href="osamabinsaif2000@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                osamabinsaif2000@gmail.com
+              </a>
             </span>
-            <a
-              href="mailto:przemyslaw.przebieda@gmal.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              przemyslaw.przebieda@gmail.com
-            </a>
+            <br/>
+            <span className="inline">
+              <img src={call} />
+              
+                03360259497
+            </span>
+
+            <h2>Profile:</h2>
+            <span><a href="https://github.com/usama-saif-2000" target="_blank" className="pointer"><img src={githubIcon}></img></a><a href="https://www.linkedin.com/in/usama-saif-967842198/" target="_blank" className="pointer"><img src={linkedinIcon}></img></a></span>
+            
           </div>
         </div>
 
         <div className="right-container">
-          <Map />
+          {/* <Map /> */}
         </div>
       </div>
     </div>

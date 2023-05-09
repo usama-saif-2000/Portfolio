@@ -1,11 +1,11 @@
 import React from "react";
-import miniproj1 from "../public/img/miniproj1.png";
-import miniproj2 from "../public/img/miniproj2.png";
-import miniproj3 from "../public/img/miniproj3.png";
-import miniproj4 from "../public/img/miniproj4.png";
-import miniproj5 from "../public/img/miniproj5.png";
-import gitIco from "../public/img/githubIco.png";
-import liveIco from "../public/img/live.png";
+import miniproj1 from "../ImagesAndStyles/img/miniproj1.png";
+import miniproj2 from "../ImagesAndStyles/img/miniproj2.png";
+import miniproj3 from "../ImagesAndStyles/img/miniproj3.png";
+import miniproj4 from "../ImagesAndStyles/img/miniproj4.png";
+import miniproj5 from "../ImagesAndStyles/img/miniproj5.png";
+import gitIco from "../ImagesAndStyles/img/githubIco.png";
+import liveIco from "../ImagesAndStyles/img/live.png";
 
 export default function MiniProjects() {
   return (

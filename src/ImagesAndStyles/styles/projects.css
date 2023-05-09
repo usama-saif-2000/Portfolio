@@ -34,7 +34,7 @@
 @media only screen and (max-width: 500px) {
   .section-projects .mini h3 {
     font-size: 1.7em;
-  }
+    }
 }
 .section-projects .project-title {
   padding: 10px 0px 20px 20px;
@@ -100,7 +100,7 @@
 }
 @media only screen and (max-width: 768px) {
   .section-projects .project-box {
-    fpadding: 10px;
+    padding: 10px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -193,7 +193,7 @@
   flex-direction: column;
 }
 .section-projects .right-container h1 {
-  margin: 40px 40px 20px 40px;
+  margin: 0px 40px 20px 40px;
 }
 @media only screen and (max-width: 1300px) {
   .section-projects .right-container h1 {
@@ -209,7 +209,7 @@
 }
 .section-projects .right-container .description {
   margin: 0px 40px 0px 40px;
-  font-size: 1.2em;
+  font-size: 1.15em;
   text-align: justify;
 }
 @media only screen and (max-width: 1300px) {
@@ -385,3 +385,13 @@
   cursor: pointer;
   width: 30px;
 }/*# sourceMappingURL=projects.css.map */
+
+.red{
+  color: red;
+  font-size: 15px;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+}

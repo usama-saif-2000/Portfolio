@@ -18,3 +18,23 @@ html body {
 html code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }/*# sourceMappingURL=main.css.map */
+
+.button_resume{
+  width: 180px;
+  height: 45px;
+  position: absolute;
+  left: 280px;
+  top: 522px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: red;
+  font-size: 25px;
+  font-family: "Nunito", sans-serif;
+  padding-top: 1.6px;
+  border: 2px solid black;
+}
+.button_resume:hover{
+  transform: scale(1.06);
+  padding-top: 1px;
+  text-decoration: underline;
+}

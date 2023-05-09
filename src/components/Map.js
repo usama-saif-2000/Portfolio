@@ -7,7 +7,7 @@ import {
   Marker,
   ZoomableGroup,
 } from "react-simple-maps";
-import localizationIco from "../public/img/place.png";
+// import localizationIco from "../public/img/place.png";
 
 const Map = () => {
   const geoUrl =

@@ -1,7 +1,7 @@
 import React from "react";
-import menu from "../public/img/hamburger_menu.png";
+import menu from "../ImagesAndStyles/img/hamburger_menu.png";
 
-const name = `<PrzemyslawPrzebieda className="dev"/>`;
+const name = `<UsamaSaif className="dev"/>`;
 
 export default function Navbar() {
   return (

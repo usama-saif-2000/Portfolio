@@ -1,5 +1,5 @@
 .section-about {
-  height: 70vh;
+  height: 32vh;
   padding-top: 150px;
 }
 .section-about .aboutme-container {
@@ -87,3 +87,14 @@
   margin-top: 20px;
   width: 80px;
 }/*# sourceMappingURL=aboutme.css.map */
+
+.section-about{
+  margin-top: 210px;
+}
+
+.bold{
+  font-weight: bold;
+}
+.red_excl{
+  color: red;
+}

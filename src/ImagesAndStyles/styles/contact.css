@@ -115,3 +115,10 @@
   color: #2f575d;
   text-decoration: underline;
 }/*# sourceMappingURL=contact.css.map */
+
+.inline{
+  display: inline;
+}
+.pointer{
+  cursor: pointer;
+}

@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import page1 from "../public/img/page1.png";
-import cssIco from "../public/img/css.png";
-import reactIco from "../public/img/react.png";
-import gitIco from "../public/img/githubIco.png";
-import liveIco from "../public/img/live.png";
-
+import page1 from "../ImagesAndStyles/img/page1.png";
+import cssIco from "../ImagesAndStyles/img/css.png";
+import reactIco from "../ImagesAndStyles/img/react.png";
+import nodeIcon from "../ImagesAndStyles/img/node.png";
+import full_pr1 from "../ImagesAndStyles/img/full_pr1.png"
 export default function Project1() {
   const [html, setHtml] = useState("");
   const [css, setCss] = useState("");
   const [js, setJs] = useState("");
   const [boot, setBoot] = useState("");
   const [react, setReact] = useState("");
-  const [three, setThree] = useState("");
+  const [node, setNode] = useState("");
 
   const handleMouseEnter = (e) => {
     if (e.target.id == "HTML") {
@@ -24,8 +23,8 @@ export default function Project1() {
       setBoot(true);
     } else if (e.target.id == "React") {
       setReact(true);
-    } else if (e.target.id == "Three.js") {
-      setThree(true);
+    } else if (e.target.id == "node") {
+      setNode(true);
     }
   };
   const handleMouseLeave = () => {
@@ -34,23 +33,23 @@ export default function Project1() {
     setJs();
     setBoot();
     setReact();
-    setThree();
+    setNode();
   };
   return (
     <div className="project-box">
-      <div className="left-container">
-        <img src={page1} className="img-project1" />
+      <div className="left-container pointer">
+        <img src={full_pr1} className="img-project1" />
       </div>
       <div className="right-container">
-        <h1>Exclusive Car Rental</h1>
+        <h1>NPL Draft</h1>
         <div className="description">
-          "Exclusive Car Rental" is a website where the user can rent a luxury
-          car. The user has the option to apply for a rental through an
-          application form. In addition, it is possible to preview available
-          cars with their technical data. The site contains information
-          necessary for car rental, the possibility to subscribe to the
-          newsletter and customer reviews. Website is written for mobile and
-          desktop users.
+          "NPL Draft" is an appliccation where I efficiently managed
+          six teams and five distinct categories of players.
+           Each category consists of a predetermined number of players.
+           <br></br>For example, the first round includes the wicket-keeping category, with only one round since there are only six players to choose from. The draft picks for each round are stored in the application's database.
+           <br></br>As the draft progresses, subsequent categories are selected,
+            such as batsmen, which includes 18 players and is divided into three rounds. 
+           Finally, the application displays the teams that have been created through the drafting process.
           <div className="tech-box">
             <div
               className="single-box"
@@ -68,31 +67,19 @@ export default function Project1() {
               onMouseLeave={handleMouseLeave}
             >
               <img src={cssIco} className="tech-ico2" alt="html icon" />
-              <span>{css ? "CSS/SCSS" : ""}</span>
+              <span>{css ? "CSS" : ""}</span>
+            </div>
+            <div
+              className="single-box"
+              id="node"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img src={nodeIcon} className="tech-ico2" alt="node icon" />
+              <span>{node ? "Node JS" : ""}</span>
             </div>
           </div>
-          <div className="links">
-            <a
-              href="https://github.com/PPrzebieda/exclusive-car-rental"
-              target="blank"
-            >
-              <img src={gitIco} className="liveIco" alt="github icon" />
-              <span>GitHub</span>
-            </a>
-            <a
-              href="https://pprzebieda.github.io/exclusive-car-rental/"
-              target="_blank"
-            >
-              <img
-                src={liveIco}
-                className="liveIco"
-                target="blank"
-                alt="live icon"
-              />
-              <span>Live Demo</span>
-            </a>
           </div>
-        </div>
       </div>
     </div>
   );
