@@ -64,7 +64,7 @@ export default function MainPage() {
           <a href="https://github.com/usama-saif-2000" target="_blank">
             <img src={gitIco} className="social-ico" alt="github icon" />
           </a>
-          <a href="https://fliphtml5.com/book_edit/djbuj/thwf/?phone=true&maxwidthtosmallmode=0&maxheighttosmallmode=01683519798448#p=1" target="_blank">
+          <a href="https://drive.google.com/file/d/1WKD70XU7jUoA9_va7oAgdVu5U9G_8n2S/view?usp=sharing" target="_blank">
           <button className="button_resume">Resume</button>
           </a>
           <div className="description">Tech Stack:</div>
