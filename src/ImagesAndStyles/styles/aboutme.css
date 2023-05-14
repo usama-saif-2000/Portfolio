@@ -1,6 +1,7 @@
 .section-about {
   height: 32vh;
   padding-top: 150px;
+  margin-top: 210px;
 }
 .section-about .aboutme-container {
   width: 80%;
@@ -9,6 +10,9 @@
   font-family: "Nunito", sans-serif;
 }
 @media only screen and (max-width: 1300px) {
+  .section-about{
+    padding-top: 150px;
+  }
   .section-about .aboutme-container {
     width: 94%;
     margin-left: 3%;
@@ -23,6 +27,9 @@
   margin-right: 50px;
 }
 @media only screen and (max-width: 1568px) {
+  .section-about{
+    padding-top: 150px;
+  }
   .section-about .aboutme-container .graphic {
     display: none;
   }
@@ -50,15 +57,49 @@
   .section-about .aboutme-container .description h2 {
     font-size: 2.5em;
   }
+  .section-about{
+    padding-top: 0px;
+    margin-top: 150px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .section-about{
+    padding-top: 150px;
+    margin-top: 100px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .section-about .aboutme-container .description h2 {
     font-size: 2em;
   }
+  .section-about{
+    padding-top: 100px;
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+
+  .section-about{
+    padding-top: 100px;
+    margin-top: 100px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .section-about .aboutme-container .description h2 {
     font-size: 1.7em;
+  }
+  .section-about{
+    padding-top: 95px;
+    margin-top: 150px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .section-about .aboutme-container .description h2 {
+    font-size: 1.7em;
+  }
+  .section-about{
+    padding-top: 90px;
+    margin-top: 150px;
   }
 }
 .section-about .aboutme-container .description .text {
@@ -88,9 +129,9 @@
   width: 80px;
 }/*# sourceMappingURL=aboutme.css.map */
 
-.section-about{
+/* .section-about{
   margin-top: 210px;
-}
+} */
 
 .bold{
   font-weight: bold;

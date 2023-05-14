@@ -9,6 +9,7 @@ function App() {
     <div className="app-container">
       <MainPage />
       <AboutMe />
+      
       <Projects />
       <Contact />
     </div>

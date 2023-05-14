@@ -38,3 +38,101 @@ html code {
   padding-top: 1px;
   text-decoration: underline;
 }
+@media only screen and (max-width: 1300px) {
+  .button_resume {
+    width: 160px;
+    height: 45px;
+    left: 280px;
+    font-size: 22px;   
+    top: 342px;    
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .button_resume {
+      width: 160px;
+      height: 45px;
+      left: 270px;
+      font-size: 22px;   
+      top: 386px;     
+    }
+  }
+  }
+@media only screen and (max-width: 1100px) {
+  .button_resume {
+    width: 160px;
+    height: 45px;
+    left: 250px;
+    font-size: 22px;   
+    top: 382px;     
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .button_resume {
+    width: 160px;
+    height: 45px;
+    left: 230px;
+    font-size: 22px;   
+    top: 378px;     
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .button_resume {
+    width: 160px;
+    height: 45px;
+    left: 230px;
+    font-size: 22px;   
+    top: 378px;   
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .button_resume {
+    width: 160px;
+    height: 45px;
+    left: 230px;
+    font-size: 22px;   
+    top: 326px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .button_resume {
+    width: 140px;
+    height: 40px;
+    left: 200px;
+    font-size: 22px;   
+    top: 320px; 
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .button_resume {
+    width: 140px;
+    height: 40px;
+    left: 180px;
+    font-size: 22px;   
+    top: 390px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .button_resume {
+    width: 140px;
+    height: 40px;
+    left: 170px;
+    font-size: 22px;   
+    top: 396px; 
+  }
+}
+
+@media only screen and (max-width:300px) {
+  .button_resume {
+    width: 120px;
+    height: 40px;
+    left: 150px;
+    font-size: 22px;   
+    top: 430px; 
+  }
+}

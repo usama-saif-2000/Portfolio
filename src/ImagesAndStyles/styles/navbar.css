@@ -1,7 +1,7 @@
 .nav-section {
   display: flex;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
 }
 .nav-section .nav-container {
   width: 100%;
@@ -18,13 +18,15 @@
 }
 .nav-section .nav-container .hamburger-menu {
   height: 20px;
-  padding: 15px;
+  padding: 15px 0px 15px 0px;
+  /* margin-left: 0px; */
   display: none;
 }
 @media only screen and (max-width: 768px) {
   .nav-section .nav-container .hamburger-menu {
     display: block;
   }
+  .nav-section .nav-container{}
 }
 .nav-section .nav-container .nav-logo {
   width: 600px;
@@ -33,9 +35,6 @@
   font-size: 1.8em;
   font-weight: bold;
 }
-/* .nav-container{
-  margin-left: 0px;
-} */
 @media only screen and (max-width: 1300px) {
   .nav-section .nav-container .nav-logo {
     font-size: 1.5em;
