@@ -10,6 +10,7 @@ import gitIco from "../ImagesAndStyles/img/githubIco.png";
 import liveIco from "../ImagesAndStyles/img/live.png";
 import firebaseIco from "../ImagesAndStyles/img/firebase.png";
 import pr1 from "../ImagesAndStyles/img/pr1.jpeg"
+import NextIcon from "../ImagesAndStyles/img/nextjs.svg"
 
 export default function Project3() {
   const [html, setHtml] = useState("");
@@ -17,6 +18,7 @@ export default function Project3() {
   const [js, setJs] = useState("");
   const [boot, setBoot] = useState("");
   const [react, setReact] = useState("");
+  const [next, setNext] = useState("");
   const [three, setThree] = useState("");
   const [firebase, setFirebase] = useState("");
 
@@ -29,6 +31,9 @@ export default function Project3() {
       setJs(true);
     } else if (e.target.id == "Bootstrap") {
       setBoot(true);
+    }
+    else if (e.target.id == "Next") {
+      setNext(true);
     } else if (e.target.id == "React") {
       setReact(true);
     } else if (e.target.id == "Three.js") {
@@ -44,6 +49,7 @@ export default function Project3() {
     setBoot();
     setReact();
     setThree();
+    setNext();
     setFirebase();
   };
   return (
@@ -63,12 +69,12 @@ export default function Project3() {
           <div className="tech-box">
             <div
               className="single-box"
-              id="React"
+              id="Next"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <img src={reactIco} className="tech-ico1" alt="html icon" />
-              <span>{react ? "React" : ""}</span>
+              <img src={NextIcon} className="tech-ico1" alt="next icon" />
+              <span>{next ? "Next JS" : ""}</span>
             </div>
             <div
               className="single-box"

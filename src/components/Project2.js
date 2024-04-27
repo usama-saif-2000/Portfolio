@@ -1,21 +1,16 @@
 import React, { useState } from "react";
-import page2 from "../ImagesAndStyles/img/page2.png";
+import page1 from "../ImagesAndStyles/img/page1.png";
 import cssIco from "../ImagesAndStyles/img/css.png";
 import reactIco from "../ImagesAndStyles/img/react.png";
-import gitIco from "../ImagesAndStyles/img/githubIco.png";
-import liveIco from "../ImagesAndStyles/img/live.png";
-import firebaseIco from "../ImagesAndStyles/img/firebase.png";
-import angular from '../ImagesAndStyles/img/angular.png'
-import pr2_full from '../ImagesAndStyles/img/pr2_full.png'
-
-export default function Project2() {
+import nodeIcon from "../ImagesAndStyles/img/node.png";
+import full_pr1 from "../ImagesAndStyles/img/full_pr1.png";
+export default function Project1() {
   const [html, setHtml] = useState("");
   const [css, setCss] = useState("");
   const [js, setJs] = useState("");
   const [boot, setBoot] = useState("");
   const [react, setReact] = useState("");
-  const [three, setThree] = useState("");
-  const [firebase, setFirebase] = useState("");
+  const [node, setNode] = useState("");
 
   const handleMouseEnter = (e) => {
     if (e.target.id == "HTML") {
@@ -28,10 +23,8 @@ export default function Project2() {
       setBoot(true);
     } else if (e.target.id == "React") {
       setReact(true);
-    } else if (e.target.id == "Three.js") {
-      setThree(true);
-    } else if (e.target.id == "Firebase") {
-      setFirebase(true);
+    } else if (e.target.id == "node") {
+      setNode(true);
     }
   };
   const handleMouseLeave = () => {
@@ -40,20 +33,33 @@ export default function Project2() {
     setJs();
     setBoot();
     setReact();
-    setThree();
-    setFirebase();
+    setNode();
   };
   return (
     <div className="project-box">
+      <div className="left-container pointer">
+        <img src={full_pr1} className="img-project1" />
+      </div>
       <div className="right-container">
-        <h1>Get The Book</h1>
+        <h1>
+          NPL Draft 
+          
+        </h1>
+        <p className="hover-image-project">
+            ( Hover image to view full image scroll )
+          </p>
         <div className="description">
-          "Get The Book" is a comprehensive web application that offers a user-friendly interface for individuals to explore the available books at the store and reserve them.
-          It features three separate portals for different user roles, including admin, manager, and user.
-          As a user, you can easily browse through the list of available books and apply for a reservation.
-          Meanwhile, managers have additional capabilities such as adding new books, removing old ones, and managing reservations.
-          With the admin portal, you have the power to grant or revoke user access levels.
-          For example, you can promote a user to become a manager or an admin or reduce their privileges to a regular user.
+          "NPL Draft" is an appliccation where I efficiently managed six teams
+          and five distinct categories of players. Each category consists of a
+          predetermined number of players.
+          <br></br>For example, the first round includes the wicket-keeping
+          category, with only one round since there are only six players to
+          choose from. The draft picks for each round are stored in the
+          application's database.
+          <br></br>As the draft progresses, subsequent categories are selected,
+          such as batsmen, which includes 18 players and is divided into three
+          rounds. Finally, the application displays the teams that have been
+          created through the drafting process.
           <div className="tech-box">
             <div
               className="single-box"
@@ -61,8 +67,8 @@ export default function Project2() {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <img src={angular} className="tech-ico1" alt="html icon" />
-              <span>{react ? "Angular" : ""}</span>
+              <img src={reactIco} className="tech-ico1" alt="html icon" />
+              <span>{react ? "React" : ""}</span>
             </div>
             <div
               className="single-box"
@@ -70,15 +76,20 @@ export default function Project2() {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <img src={cssIco} className="tech-ico2" alt="css icon" />
+              <img src={cssIco} className="tech-ico2" alt="html icon" />
               <span>{css ? "CSS" : ""}</span>
             </div>
+            <div
+              className="single-box"
+              id="node"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img src={nodeIcon} className="tech-ico2" alt="node icon" />
+              <span>{node ? "Node JS" : ""}</span>
+            </div>
           </div>
-
         </div>
-      </div>
-      <div className="left-container pointer">
-        <img src={pr2_full} className="img-project2" />
       </div>
     </div>
   );

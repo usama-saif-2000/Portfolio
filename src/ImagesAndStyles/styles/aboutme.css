@@ -41,6 +41,9 @@
   color: #28363d;
   width: 50%;
   padding: 20px;
+  margin-top: 100px;
+  /* display: flex;
+  align-items: center; */
 }
 @media only screen and (max-width: 1568px) {
   .section-about .aboutme-container .description {

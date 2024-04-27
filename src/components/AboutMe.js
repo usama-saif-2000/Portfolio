@@ -7,15 +7,12 @@ export default function AboutMe() {
     <div className="section-about" id="aboutme">
       <div className="aboutme-container">
         <img src={image} className="graphic" alt="3D graphic" />
-        <div className="description">
+        <div className="description block">
           <h2>About <span className="red_excl">me..!!</span></h2>
           <div className="text">
-            I am a front-end developer and I am skilled in REACT framework as well as HTML, CSS and JavaScript. I am looking to gain valuable experience in an IT environment and expand my competence. I am ready for challenges and eager to learn and acquire new skills.
+          Skilled Front-End Developer with expertise in React.js and Next.js. I excel at building dynamic and user-focused web applications that load quickly and adapt to different devices. My work with Next.js helps create websites that rank well in search engines and deliver a smooth user experience. I'm passionate about designing intuitive and visually appealing interfaces that keep users engaged.
             <br />
-            <br /> I will be graduating from the FAST-NUCES
-             with a degree in Computer Science within a month.
-            <br />
-            
+
           </div>
         </div>
       </div>

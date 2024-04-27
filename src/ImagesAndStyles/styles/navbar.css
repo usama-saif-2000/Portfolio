@@ -28,6 +28,9 @@
   }
   .nav-section .nav-container{}
 }
+.orange-text{
+  color: orangered;
+}
 .nav-section .nav-container .nav-logo {
   width: 600px;
   cursor: pointer;

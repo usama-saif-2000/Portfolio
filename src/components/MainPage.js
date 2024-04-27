@@ -9,6 +9,7 @@ import cssIco from "../ImagesAndStyles/img/css.png";
 import jsIco from "../ImagesAndStyles/img/js.png";
 import bootIco from "../ImagesAndStyles/img/bootstrap.png";
 import reactIco from "../ImagesAndStyles/img/react.png";
+import nextico from "../ImagesAndStyles/img/nextjs.svg";
 import angularIco from "../ImagesAndStyles/img/angular.png";
 import usama from "../ImagesAndStyles/img/usama.jpeg";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
@@ -20,11 +21,14 @@ export default function MainPage() {
   const [js, setJs] = useState("");
   const [boot, setBoot] = useState("");
   const [react, setReact] = useState("");
+  const [next, setNext] = useState("");
   const [angular, setAngular] = useState("");
 
   const handleMouseEnter = (e) => {
     if (e.target.id == "HTML") {
       setHtml(true);
+    } else if (e.target.id == "Next") {
+      setNext(true);
     } else if (e.target.id == "CSS") {
       setCss(true);
     } else if (e.target.id == "JavaScript") {
@@ -44,16 +48,17 @@ export default function MainPage() {
     setBoot();
     setReact();
     setAngular();
+    setNext();
   };
   return (
     <div className="section-main" id="home">
       <Navbar />
       <div className="main-page-container">
         <div className="left-container">
-          <span className="title">Front-End React Developer</span>
+          <span className="title">NEXT JS / React JS Developer</span>
           <img src={hiIco} className="hello-ico" alt="hello icon" />
           <div className="description">
-            Hi, I'm Usama Saif. A passionate Front-end React Developer..
+            Hi, I'm Usama Saif. A passionate Front-end NEXT/React Developer..
           </div>
           <a
             href="https://www.linkedin.com/in/usama-saif-967842198/"
@@ -65,12 +70,27 @@ export default function MainPage() {
             <img src={gitIco} className="social-ico" alt="github icon" />
           </a>
           {/* <a href="https://drive.google.com/file/d/1WKD70XU7jUoA9_va7oAgdVu5U9G_8n2S/view?usp=sharing" target="_blank"> */}
-          
-          <a href="https://drive.google.com/file/d/1wohQ4W0CGBDKzL3GQiHIu3q9FQk-U4Qh/view?usp=sharing" target="_blank">
-          <button className="button_resume">Resume</button>
+
+          <a
+            href="https://drive.google.com/file/d/1LV2Mw6YSWD_mx_P8UIi2IUGEoememEEg/view?usp=drive_link"
+            target="_blank"
+          >
+            <button className="button_resume">Resume</button>
           </a>
-          <div className="description">Tech Stack:</div>
+          <div className="description">
+            Tech Stack:
+            <span className="hover-text">(Hover on items to know more)</span>
+          </div>
           <div className="tech-stack-box">
+            <div
+              className="tech-stack-single-box"
+              id="Next"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img src={nextico} className="tech-ico2" alt="next icon" />
+              <span>{next ? "Next JS" : ""}</span>
+            </div>
             <div
               className="tech-stack-single-box"
               id="React"
@@ -125,8 +145,6 @@ export default function MainPage() {
               <img src={angularIco} className="tech-ico1" alt="angular icon" />
               <span>{angular ? "Angular" : ""}</span>
             </div>
-            
-
           </div>
         </div>
         <div className="right-container">

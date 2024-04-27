@@ -1,14 +1,14 @@
 import React from "react";
 import menu from "../ImagesAndStyles/img/hamburger_menu.png";
 
-const name = `<UsamaSaif className="dev"/>`;
+const name = `Usama Saif (NEXT JS Developer)`;
 
 export default function Navbar() {
   return (
     <div className="nav-section">
       <div className="nav-container">
           <a href="#home">
-            <div className="nav-logo">{name}</div>
+            <div className="nav-logo orange-text">{name}</div>
           </a>
           <img src={menu} className="hamburger-menu" />
           <ul>

@@ -65,6 +65,13 @@
   font-size: 2em;
   margin-top: 60px;
   color: #28363d;
+  display: flex;
+  align-items: center;
+}
+
+.hover-text{
+  color: orangered;
+  margin-left: 12px;
 }
 @media only screen and (max-width: 1300px) {
   .section-main .main-page-container .left-container .description {
@@ -90,6 +97,7 @@
 .section-main .main-page-container .left-container .tech-stack-box {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .section-main .main-page-container .left-container .tech-stack-box .tech-stack-single-box {
   margin-top: 30px;
